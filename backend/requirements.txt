@@ -13,7 +13,7 @@ opencv-python-headless>=4.10,<5
 imageio-ffmpeg>=0.6,<1
 numpy>=2.0,<3
 Pillow==12.3.0
-soundfile>=0.13,<1
+soundfile>=0.14.0,<1
 faster-whisper==1.2.1
 demucs==4.0.1
 pytest==9.1.1
