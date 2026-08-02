@@ -6,7 +6,7 @@ pydantic-settings==2.10.1
 # Pillow 12.3. Install MoviePy without dependencies in the Dockerfile so the
 # patched Pillow release is not downgraded.
 decorator>=4.0.2,<6
-imageio>=2.5,<3
+imageio>=2.37.4,<3
 proglog<=1.0.0
 librosa==0.11.0
 opencv-python-headless>=4.10,<5
