@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pulse-studio.dev/schemas/project-v1.json",
+  "title": "Pulse Studio Project v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["$schema", "formatVersion", "name", "createdAt", "settings", "analysis", "assets"],
+  "properties": {
+    "$schema": { "const": "https://pulse-studio.dev/schemas/project-v1.json" },
+    "formatVersion": { "const": 1 },
+    "name": { "type": "string", "minLength": 1, "maxLength": 100 },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "settings": { "type": "object" },
+    "analysis": { "type": "object" },
+    "assets": {
+      "type": "array",
+      "maxItems": 50,
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^input/(song\\.[A-Za-z0-9]+|cover\\.[A-Za-z0-9]+|language\\.txt|lyrics\\.(txt|srt)|lyrics\\.(words|alignment)\\.json|background_[0-9]{3}\\.[A-Za-z0-9]+)$" }
+    }
+  }
+}

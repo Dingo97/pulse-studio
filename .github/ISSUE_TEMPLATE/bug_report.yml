@@ -1,0 +1,71 @@
+name: Bug report
+description: Report a reproducible defect in Pulse Studio
+title: "[Bug]: "
+labels: [bug, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping improve Pulse Studio. Remove private media, lyrics, paths, and personal information from logs.
+  - type: input
+    id: version
+    attributes:
+      label: Pulse Studio version
+      placeholder: v0.1.0-alpha.1 or commit SHA
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: Windows 11, Docker Desktop version, GPU, NVIDIA driver
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Installation / onboarding
+        - Projects / dashboard
+        - Lyric alignment
+        - Live preview
+        - Rendering / NVENC
+        - Backgrounds / media
+        - Presets / fonts
+        - Quality control / release pack
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: Provide the smallest reliable sequence that triggers the issue.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sanitized logs
+      render: shell
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues.
+          required: true
+        - label: I removed private songs, lyrics, artwork, usernames, and local paths.
+          required: true

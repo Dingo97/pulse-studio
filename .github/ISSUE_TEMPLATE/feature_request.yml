@@ -1,0 +1,32 @@
+name: Feature reques
+description: Propose an improvement to the automated song-release workflow
+title: "[Feature]: "
+labels: [enhancement, needs-discussion]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What repetitive release task or limitation should Pulse Studio solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Does this preserve Pulse Studio's focused workflow?
+      options:
+        - Yes — it automates song publishing
+        - Unsure — discussion needed
+        - No — it is general video editing
+    validations:
+      required: true

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://pulse-studio.dev/schemas/preset-v1.json",
+  "formatVersion": 1,
+  "name": "Classic Pulse",
+  "description": "The balanced default look included with Pulse Studio.",
+  "author": "Pulse Studio contributors",
+  "license": "CC0-1.0",
+  "tags": ["clean", "cover", "visualizer"],
+  "createdWith": "Pulse Studio 0.1.0-alpha.1",
+  "settings": {
+    "background_mode": "blurred_cover", "background_color": "#0b0712", "background_blur": 30,
+    "background_brightness": 100, "background_saturation": 100, "background_video_offset": 0, "background_video_speed": 1,
+    "visualizer": "bars", "visualizer_enabled": true, "visualizer_color": "#ffffff", "visualizer_pulse": true,
+    "overlay": "grain", "overlay_intensity": 24, "cover_enabled": true, "cover_shadow": true,
+    "font_family": "Arial", "font_size": 64, "text_color": "#ffffff", "text_bold": true,
+    "text_italic": false, "text_align": "center", "shadow_color": "#000000", "shadow_blur": 18,
+    "shadow_distance": 5, "shadow_opacity": 75, "animation": "fade", "animation_direction": "up",
+    "word_animation": "highlight", "active_word_color": "#ff8a4c", "safe_area": "auto",
+    "show_safe_guides": true, "smart_crop": true, "background_loop": "repeat", "section_cuts": true,
+    "lyrics_x_landscape": 0.715, "lyrics_y_landscape": 0.57, "lyrics_x_vertical": 0.5, "lyrics_y_vertical": 0.71,
+    "visualizer_x_landscape": 0.725, "visualizer_y_landscape": 0.42, "visualizer_x_vertical": 0.5, "visualizer_y_vertical": 0.58
+  }
+}

@@ -1,0 +1,25 @@
+services:
+  backend:
+    build: ./backend
+    restart: unless-stopped
+    environment:
+      APP_DATA_DIR: /app/data
+      APP_CORS_ORIGINS: http://localhost:8080,http://127.0.0.1:8080
+      APP_RENDER_CONCURRENCY: 1
+      APP_MODELS_DIR: /app/models
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+    gpus: all
+    ports:
+      # The API has no user authentication by design. Keep it loopback-only.
+      - "127.0.0.1:8000:8000"
+
+  web:
+    build: ./frontend
+    restart: unless-stopped
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:8080:80"
