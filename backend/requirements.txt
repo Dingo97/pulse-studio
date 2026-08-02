@@ -5,7 +5,7 @@ pydantic-settings==2.10.1
 # MoviePy 2.2.1 still declares Pillow<12 although Pulse is compatible with
 # Pillow 12.3. Install MoviePy without dependencies in the Dockerfile so the
 # patched Pillow release is not downgraded.
-decorator>=4.0.2,<6
+decorator>=5.3.1,<6
 imageio>=2.5,<3
 proglog<=1.0.0
 librosa==0.11.0
