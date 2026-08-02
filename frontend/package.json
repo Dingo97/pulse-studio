@@ -1,7 +1,7 @@
 {
   "name": "pulse-studio-web",
   "private": true,
-  "version": "0.1.0-alpha.1",
+  "version": "0.1.0-alpha.2",
   "license": "SEE LICENSE IN ../LICENSE",
   "type": "module",
   "scripts": {

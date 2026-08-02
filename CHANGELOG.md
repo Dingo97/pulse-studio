@@ -6,6 +6,14 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ## [Unreleased]
 
+## [0.1.0-alpha.2] - 2026-08-02
+
+### Fixed
+
+- Corrected the publication-module font import exposed by the clean Linux CI environment.
+- Installed MoviePy explicitly in the backend CI job to match the Docker image.
+- Updated GitHub Actions runtimes and grouped future Dependabot updates.
+
 ## [0.1.0-alpha.1] - 2026-08-02
 
 First public Community Edition alpha.

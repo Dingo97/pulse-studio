@@ -6,7 +6,7 @@
   "author": "Pulse Studio contributors",
   "license": "CC0-1.0",
   "tags": ["clean", "cover", "visualizer"],
-  "createdWith": "Pulse Studio 0.1.0-alpha.1",
+  "createdWith": "Pulse Studio 0.1.0-alpha.2",
   "settings": {
     "background_mode": "blurred_cover", "background_color": "#0b0712", "background_blur": 30,
     "background_brightness": 100, "background_saturation": 100, "background_video_offset": 0, "background_video_speed": 1,

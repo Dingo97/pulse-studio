@@ -54,7 +54,7 @@ async def lifespan(_: FastAPI):
 
 app = FastAPI(
     title="Pulse Studio API",
-    version="0.1.0-alpha.1",
+    version="0.1.0-alpha.2",
     description="Local-first GPU lyric video rendering API.",
     lifespan=lifespan,
 )

@@ -20,7 +20,7 @@ export function createPreset(name: string, settings: EditorSettings): PulsePrese
   return {
     $schema: PRESET_SCHEMA, formatVersion: 1, name: name.trim().slice(0, 80),
     description: "Created with Pulse Studio", author: "", license: "CC0-1.0",
-    tags: [], createdWith: "Pulse Studio 0.1.0-alpha.1", settings,
+    tags: [], createdWith: "Pulse Studio 0.1.0-alpha.2", settings,
   };
 }
 

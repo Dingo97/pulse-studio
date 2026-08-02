@@ -28,7 +28,7 @@
 ## Release
 
 - [ ] Finalize `CHANGELOG.md` and remove `Unreleased` from the release date.
-- [ ] Create and push tag `v0.1.0-alpha.1`.
+- [ ] Create and push the intended release tag.
 - [ ] Publish release notes, screenshots, and a short rights-cleared demo video.
 - [ ] Document known limitations.
 - [ ] Verify clone → onboarding → first export from the public repository.

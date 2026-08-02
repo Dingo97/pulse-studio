@@ -8,7 +8,7 @@ from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 
-from .renderer import _fon
+from .renderer import _font
 
 
 def create_release_pack(root: Path, project_name: str, video_files: list[str], options: dict, analysis: dict, quality: dict) -> list[str]:

@@ -1,4 +1,4 @@
-# Known limitations — v0.1.0-alpha.1
+# Known limitations — v0.1.0-alpha.2
 
 This is the first public alpha. Please report reproducible problems through the
 GitHub issue templates, without attaching copyrighted songs or private projec
