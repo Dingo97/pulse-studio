@@ -1,20 +1,20 @@
-fastapi==0.139.0
-uvicorn[standard]==0.35.0
+fastapi==0.141.1
+uvicorn[standard]==0.52.1
 python-multipart==0.0.32
-pydantic-settings==2.10.1
+pydantic-settings==2.14.2
 # MoviePy 2.2.1 still declares Pillow<12 although Pulse is compatible with
 # Pillow 12.3. Install MoviePy without dependencies in the Dockerfile so the
 # patched Pillow release is not downgraded.
-decorator>=4.0.2,<6
-imageio>=2.5,<3
+decorator>=5.3.1,<6
+imageio>=2.37.4,<3
 proglog<=1.0.0
 librosa==0.11.0
-opencv-python-headless>=4.10,<5
+opencv-python-headless>=5.0.0.93,<6
 imageio-ffmpeg>=0.6,<1
-numpy>=2.0,<3
+numpy>=2.5.1,<3
 Pillow==12.3.0
-soundfile>=0.13,<1
+soundfile>=0.14.0,<1
 faster-whisper==1.2.1
-demucs==4.0.1
+demucs==4.1.0
 pytest==9.1.1
-httpx>=0.28,<1
+httpx>=0.28.1,<1
